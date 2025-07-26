@@ -1,0 +1,255 @@
+2025-07-25 16:12:59.653966: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE4.1 SSE4.2 AVX AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+[16:13:03] 
+
+****
+Pre-condition Violation
+no owner
+Violation occurred on line 146 in file /home/conda/feedstock_root/build_artifacts/rdkit-meta_1732947292231/work/Code/GraphMol/Atom.h
+Failed Expression: dp_mol
+----------
+Stacktrace:
+ 0# Invar::Invariant::toString[abi:cxx11]() const in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/../../../libRDKitRDGeneral.so.1
+ 1# Invar::operator<<(std::ostream&, Invar::Invariant const&) in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/../../../libRDKitRDGeneral.so.1
+ 2# RDKit::Atom::getDegree() const in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/../../../../libRDKitGraphMol.so.1
+ 3# 0x00007F9F7DF7579A in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/rdchem.so
+ 4# boost::python::objects::function::call(_object*, _object*) const in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/../../../libboost_python311.so.1.86.0
+ 5# 0x00007F9F7E359449 in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/../../../libboost_python311.so.1.86.0
+ 6# boost::python::detail::exception_handler::operator()(boost::function_n<void> const&) const in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/../../../libboost_python311.so.1.86.0
+ 7# 0x00007F9F7D633CC4 in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/rdmolfiles.so
+ 8# 0x00007F9F7D633D14 in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/rdmolfiles.so
+ 9# 0x00007F9F7D749A24 in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/rdCIPLabeler.so
+10# 0x00007F9F7DFBEDC4 in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/rdchem.so
+11# 0x00007F9F7DF5056D in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/rdchem.so
+12# 0x00007F9F7DF5008D in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/rdchem.so
+13# 0x00007F9F7DF4FBAD in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/rdchem.so
+14# 0x00007F9F7DF4F6CD in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/rdchem.so
+15# 0x00007F9F7DF4F1ED in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/rdchem.so
+16# 0x00007F9F7E418A94 in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/rdBase.so
+17# 0x00007F9F7E418AE4 in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/rdBase.so
+18# 0x00007F9F7E418B34 in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/rdBase.so
+19# 0x00007F9F7E418B84 in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/rdBase.so
+20# boost::python::handle_exception_impl(boost::function_n<void>) in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/../../../libboost_python311.so.1.86.0
+21# 0x00007F9F7E3569B3 in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/../../../libboost_python311.so.1.86.0
+22# _PyObject_MakeTpCall in /home/ivanam/.conda/envs/bio_inf/bin/python
+23# _PyEval_EvalFrameDefault in /home/ivanam/.conda/envs/bio_inf/bin/python
+24# 0x000056479803642D in /home/ivanam/.conda/envs/bio_inf/bin/python
+25# PyEval_EvalCode in /home/ivanam/.conda/envs/bio_inf/bin/python
+26# 0x0000564798054A1A in /home/ivanam/.conda/envs/bio_inf/bin/python
+27# 0x0000564798050593 in /home/ivanam/.conda/envs/bio_inf/bin/python
+28# 0x0000564798065930 in /home/ivanam/.conda/envs/bio_inf/bin/python
+29# _PyRun_SimpleFileObject in /home/ivanam/.conda/envs/bio_inf/bin/python
+30# _PyRun_AnyFileObject in /home/ivanam/.conda/envs/bio_inf/bin/python
+31# Py_RunMain in /home/ivanam/.conda/envs/bio_inf/bin/python
+32# Py_BytesMain in /home/ivanam/.conda/envs/bio_inf/bin/python
+33# 0x00007F9FC098624A in /lib/x86_64-linux-gnu/libc.so.6
+34# __libc_start_main in /lib/x86_64-linux-gnu/libc.so.6
+35# 0x000056479802591D in /home/ivanam/.conda/envs/bio_inf/bin/python
+----------
+****
+
+[I 2025-07-25 16:13:16,165] A new study created in memory with name: no-name-cdaac0f8-1510-4dab-b35b-469318dbccc1
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/keras/src/initializers/initializers.py:120: UserWarning: The initializer GlorotUniform is unseeded and being called multiple times, which will return identical values each time (even if the initializer is unseeded). Please update your code to provide a seed to the initializer, or avoid using the same initializer instance more than once.
+  warnings.warn(
+[I 2025-07-25 16:19:08,752] Trial 0 finished with value: 0.6925041079521179 and parameters: {'n_heads': 7, 'units': 21, 'dropout_rate': 0.48678784166330225, 'learning_rate': 0.00017730334651527724, 'batch_size': 60}. Best is trial 0 with value: 0.6925041079521179.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/keras/src/initializers/initializers.py:120: UserWarning: The initializer GlorotUniform is unseeded and being called multiple times, which will return identical values each time (even if the initializer is unseeded). Please update your code to provide a seed to the initializer, or avoid using the same initializer instance more than once.
+  warnings.warn(
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-07-25 16:37:18,931] Trial 1 finished with value: 0.8514106869697571 and parameters: {'n_heads': 12, 'units': 38, 'dropout_rate': 0.34464646601237625, 'learning_rate': 0.0013612089438486995, 'batch_size': 51}. Best is trial 1 with value: 0.8514106869697571.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/keras/src/initializers/initializers.py:120: UserWarning: The initializer GlorotUniform is unseeded and being called multiple times, which will return identical values each time (even if the initializer is unseeded). Please update your code to provide a seed to the initializer, or avoid using the same initializer instance more than once.
+  warnings.warn(
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-07-25 16:50:54,152] Trial 2 finished with value: 0.8557206988334656 and parameters: {'n_heads': 12, 'units': 32, 'dropout_rate': 0.44678594347161715, 'learning_rate': 0.0010032314153863183, 'batch_size': 58}. Best is trial 2 with value: 0.8557206988334656.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/keras/src/initializers/initializers.py:120: UserWarning: The initializer GlorotUniform is unseeded and being called multiple times, which will return identical values each time (even if the initializer is unseeded). Please update your code to provide a seed to the initializer, or avoid using the same initializer instance more than once.
+  warnings.warn(
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-07-25 17:16:35,096] Trial 3 finished with value: 0.8437758088111877 and parameters: {'n_heads': 10, 'units': 45, 'dropout_rate': 0.31664703281345563, 'learning_rate': 0.001461435612566844, 'batch_size': 35}. Best is trial 2 with value: 0.8557206988334656.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/keras/src/initializers/initializers.py:120: UserWarning: The initializer GlorotUniform is unseeded and being called multiple times, which will return identical values each time (even if the initializer is unseeded). Please update your code to provide a seed to the initializer, or avoid using the same initializer instance more than once.
+  warnings.warn(
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-07-25 17:24:43,206] Trial 4 finished with value: 0.7923300266265869 and parameters: {'n_heads': 5, 'units': 30, 'dropout_rate': 0.26068384880548323, 'learning_rate': 0.009252478839675601, 'batch_size': 39}. Best is trial 2 with value: 0.8557206988334656.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/keras/src/initializers/initializers.py:120: UserWarning: The initializer GlorotUniform is unseeded and being called multiple times, which will return identical values each time (even if the initializer is unseeded). Please update your code to provide a seed to the initializer, or avoid using the same initializer instance more than once.
+  warnings.warn(
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-07-25 17:35:06,174] Trial 5 finished with value: 0.7817408442497253 and parameters: {'n_heads': 7, 'units': 45, 'dropout_rate': 0.49734705794857126, 'learning_rate': 0.0007309497984091492, 'batch_size': 57}. Best is trial 2 with value: 0.8557206988334656.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/keras/src/initializers/initializers.py:120: UserWarning: The initializer GlorotUniform is unseeded and being called multiple times, which will return identical values each time (even if the initializer is unseeded). Please update your code to provide a seed to the initializer, or avoid using the same initializer instance more than once.
+  warnings.warn(
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-07-25 17:43:52,460] Trial 6 finished with value: 0.37251707911491394 and parameters: {'n_heads': 4, 'units': 55, 'dropout_rate': 0.16813861155732607, 'learning_rate': 0.009104598452855911, 'batch_size': 45}. Best is trial 2 with value: 0.8557206988334656.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/keras/src/initializers/initializers.py:120: UserWarning: The initializer GlorotUniform is unseeded and being called multiple times, which will return identical values each time (even if the initializer is unseeded). Please update your code to provide a seed to the initializer, or avoid using the same initializer instance more than once.
+  warnings.warn(
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-07-25 17:54:40,806] Trial 7 finished with value: 0.8552799820899963 and parameters: {'n_heads': 10, 'units': 23, 'dropout_rate': 0.23517892707667987, 'learning_rate': 0.000996069373811956, 'batch_size': 47}. Best is trial 2 with value: 0.8557206988334656.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/keras/src/initializers/initializers.py:120: UserWarning: The initializer GlorotUniform is unseeded and being called multiple times, which will return identical values each time (even if the initializer is unseeded). Please update your code to provide a seed to the initializer, or avoid using the same initializer instance more than once.
+  warnings.warn(
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-07-25 18:21:54,605] Trial 8 finished with value: 0.8375840783119202 and parameters: {'n_heads': 11, 'units': 48, 'dropout_rate': 0.33173889275361734, 'learning_rate': 0.0005707608150665692, 'batch_size': 38}. Best is trial 2 with value: 0.8557206988334656.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/keras/src/initializers/initializers.py:120: UserWarning: The initializer GlorotUniform is unseeded and being called multiple times, which will return identical values each time (even if the initializer is unseeded). Please update your code to provide a seed to the initializer, or avoid using the same initializer instance more than once.
+  warnings.warn(
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-07-25 18:30:32,254] Trial 9 finished with value: 0.8587833642959595 and parameters: {'n_heads': 6, 'units': 34, 'dropout_rate': 0.10348367066442812, 'learning_rate': 0.0006812998126549688, 'batch_size': 46}. Best is trial 9 with value: 0.8587833642959595.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/keras/src/initializers/initializers.py:120: UserWarning: The initializer GlorotUniform is unseeded and being called multiple times, which will return identical values each time (even if the initializer is unseeded). Please update your code to provide a seed to the initializer, or avoid using the same initializer instance more than once.
+  warnings.warn(
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-07-25 19:13:59,445] Trial 10 finished with value: 0.8658808469772339 and parameters: {'n_heads': 6, 'units': 63, 'dropout_rate': 0.10089888378815672, 'learning_rate': 0.0001031229061031558, 'batch_size': 16}. Best is trial 10 with value: 0.8658808469772339.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/keras/src/initializers/initializers.py:120: UserWarning: The initializer GlorotUniform is unseeded and being called multiple times, which will return identical values each time (even if the initializer is unseeded). Please update your code to provide a seed to the initializer, or avoid using the same initializer instance more than once.
+  warnings.warn(
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-07-25 19:54:30,741] Trial 11 finished with value: 0.8602668046951294 and parameters: {'n_heads': 6, 'units': 59, 'dropout_rate': 0.11471231259717476, 'learning_rate': 0.00010009922537981971, 'batch_size': 16}. Best is trial 10 with value: 0.8658808469772339.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/keras/src/initializers/initializers.py:120: UserWarning: The initializer GlorotUniform is unseeded and being called multiple times, which will return identical values each time (even if the initializer is unseeded). Please update your code to provide a seed to the initializer, or avoid using the same initializer instance more than once.
+  warnings.warn(
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-07-25 20:56:23,335] Trial 12 finished with value: 0.8590168952941895 and parameters: {'n_heads': 8, 'units': 64, 'dropout_rate': 0.11337369726026807, 'learning_rate': 0.000106366054457627, 'batch_size': 18}. Best is trial 10 with value: 0.8658808469772339.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/keras/src/initializers/initializers.py:120: UserWarning: The initializer GlorotUniform is unseeded and being called multiple times, which will return identical values each time (even if the initializer is unseeded). Please update your code to provide a seed to the initializer, or avoid using the same initializer instance more than once.
+  warnings.warn(
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-07-25 21:24:46,998] Trial 13 finished with value: 0.8574968576431274 and parameters: {'n_heads': 4, 'units': 64, 'dropout_rate': 0.1874240050739609, 'learning_rate': 0.00024390491779147506, 'batch_size': 16}. Best is trial 10 with value: 0.8658808469772339.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/keras/src/initializers/initializers.py:120: UserWarning: The initializer GlorotUniform is unseeded and being called multiple times, which will return identical values each time (even if the initializer is unseeded). Please update your code to provide a seed to the initializer, or avoid using the same initializer instance more than once.
+  warnings.warn(
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-07-25 21:46:38,528] Trial 14 finished with value: 0.8508932590484619 and parameters: {'n_heads': 6, 'units': 54, 'dropout_rate': 0.1679133772751448, 'learning_rate': 0.00011191997056842626, 'batch_size': 27}. Best is trial 10 with value: 0.8658808469772339.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/keras/src/initializers/initializers.py:120: UserWarning: The initializer GlorotUniform is unseeded and being called multiple times, which will return identical values each time (even if the initializer is unseeded). Please update your code to provide a seed to the initializer, or avoid using the same initializer instance more than once.
+  warnings.warn(
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-07-25 22:21:05,089] Trial 15 finished with value: 0.8634312152862549 and parameters: {'n_heads': 8, 'units': 57, 'dropout_rate': 0.13637333890465203, 'learning_rate': 0.0003253042326597232, 'batch_size': 25}. Best is trial 10 with value: 0.8658808469772339.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/keras/src/initializers/initializers.py:120: UserWarning: The initializer GlorotUniform is unseeded and being called multiple times, which will return identical values each time (even if the initializer is unseeded). Please update your code to provide a seed to the initializer, or avoid using the same initializer instance more than once.
+  warnings.warn(
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-07-25 23:00:06,258] Trial 16 finished with value: 0.7533223032951355 and parameters: {'n_heads': 9, 'units': 53, 'dropout_rate': 0.3844925302437267, 'learning_rate': 0.00032412338895927896, 'batch_size': 25}. Best is trial 10 with value: 0.8658808469772339.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/keras/src/initializers/initializers.py:120: UserWarning: The initializer GlorotUniform is unseeded and being called multiple times, which will return identical values each time (even if the initializer is unseeded). Please update your code to provide a seed to the initializer, or avoid using the same initializer instance more than once.
+  warnings.warn(
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-07-25 23:34:30,985] Trial 17 finished with value: 0.8494384288787842 and parameters: {'n_heads': 8, 'units': 59, 'dropout_rate': 0.22026988036621992, 'learning_rate': 0.00033641278681317697, 'batch_size': 26}. Best is trial 10 with value: 0.8658808469772339.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/keras/src/initializers/initializers.py:120: UserWarning: The initializer GlorotUniform is unseeded and being called multiple times, which will return identical values each time (even if the initializer is unseeded). Please update your code to provide a seed to the initializer, or avoid using the same initializer instance more than once.
+  warnings.warn(
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-07-25 23:58:05,050] Trial 18 finished with value: 0.8342496752738953 and parameters: {'n_heads': 8, 'units': 49, 'dropout_rate': 0.14717076655136846, 'learning_rate': 0.0024864218827842038, 'batch_size': 31}. Best is trial 10 with value: 0.8658808469772339.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/keras/src/initializers/initializers.py:120: UserWarning: The initializer GlorotUniform is unseeded and being called multiple times, which will return identical values each time (even if the initializer is unseeded). Please update your code to provide a seed to the initializer, or avoid using the same initializer instance more than once.
+  warnings.warn(
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-07-26 00:23:31,612] Trial 19 finished with value: 0.8527806997299194 and parameters: {'n_heads': 5, 'units': 59, 'dropout_rate': 0.2604411310984801, 'learning_rate': 0.0001615107949247961, 'batch_size': 21}. Best is trial 10 with value: 0.8658808469772339.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/keras/src/initializers/initializers.py:120: UserWarning: The initializer GlorotUniform is unseeded and being called multiple times, which will return identical values each time (even if the initializer is unseeded). Please update your code to provide a seed to the initializer, or avoid using the same initializer instance more than once.
+  warnings.warn(
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-07-26 01:02:49,905] Trial 20 finished with value: 0.8580624461174011 and parameters: {'n_heads': 7, 'units': 63, 'dropout_rate': 0.20820038524834922, 'learning_rate': 0.0004097436432860768, 'batch_size': 22}. Best is trial 10 with value: 0.8658808469772339.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/keras/src/initializers/initializers.py:120: UserWarning: The initializer GlorotUniform is unseeded and being called multiple times, which will return identical values each time (even if the initializer is unseeded). Please update your code to provide a seed to the initializer, or avoid using the same initializer instance more than once.
+  warnings.warn(
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-07-26 01:42:20,786] Trial 21 finished with value: 0.8632527589797974 and parameters: {'n_heads': 6, 'units': 58, 'dropout_rate': 0.1306496876431034, 'learning_rate': 0.0001793184744576029, 'batch_size': 16}. Best is trial 10 with value: 0.8658808469772339.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/keras/src/initializers/initializers.py:120: UserWarning: The initializer GlorotUniform is unseeded and being called multiple times, which will return identical values each time (even if the initializer is unseeded). Please update your code to provide a seed to the initializer, or avoid using the same initializer instance more than once.
+  warnings.warn(
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-07-26 02:07:01,579] Trial 22 finished with value: 0.8626769781112671 and parameters: {'n_heads': 5, 'units': 57, 'dropout_rate': 0.13936014384534318, 'learning_rate': 0.00017817572236411908, 'batch_size': 21}. Best is trial 10 with value: 0.8658808469772339.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/keras/src/initializers/initializers.py:120: UserWarning: The initializer GlorotUniform is unseeded and being called multiple times, which will return identical values each time (even if the initializer is unseeded). Please update your code to provide a seed to the initializer, or avoid using the same initializer instance more than once.
+  warnings.warn(
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-07-26 02:35:05,046] Trial 23 finished with value: 0.8352828025817871 and parameters: {'n_heads': 9, 'units': 50, 'dropout_rate': 0.1450691297970698, 'learning_rate': 0.00023011860440526845, 'batch_size': 32}. Best is trial 10 with value: 0.8658808469772339.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/keras/src/initializers/initializers.py:120: UserWarning: The initializer GlorotUniform is unseeded and being called multiple times, which will return identical values each time (even if the initializer is unseeded). Please update your code to provide a seed to the initializer, or avoid using the same initializer instance more than once.
+  warnings.warn(
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-07-26 02:44:45,330] Trial 24 finished with value: 0.8499760031700134 and parameters: {'n_heads': 7, 'units': 16, 'dropout_rate': 0.10141633920892738, 'learning_rate': 0.0001421557047500182, 'batch_size': 30}. Best is trial 10 with value: 0.8658808469772339.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/keras/src/initializers/initializers.py:120: UserWarning: The initializer GlorotUniform is unseeded and being called multiple times, which will return identical values each time (even if the initializer is unseeded). Please update your code to provide a seed to the initializer, or avoid using the same initializer instance more than once.
+  warnings.warn(
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-07-26 03:07:45,672] Trial 25 finished with value: 0.8542534112930298 and parameters: {'n_heads': 6, 'units': 41, 'dropout_rate': 0.19006663094855747, 'learning_rate': 0.000269928239091473, 'batch_size': 20}. Best is trial 10 with value: 0.8658808469772339.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/keras/src/initializers/initializers.py:120: UserWarning: The initializer GlorotUniform is unseeded and being called multiple times, which will return identical values each time (even if the initializer is unseeded). Please update your code to provide a seed to the initializer, or avoid using the same initializer instance more than once.
+  warnings.warn(
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-07-26 03:55:42,756] Trial 26 finished with value: 0.840186357498169 and parameters: {'n_heads': 9, 'units': 60, 'dropout_rate': 0.2796279723288145, 'learning_rate': 0.00043441913607968345, 'batch_size': 23}. Best is trial 10 with value: 0.8658808469772339.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/keras/src/initializers/initializers.py:120: UserWarning: The initializer GlorotUniform is unseeded and being called multiple times, which will return identical values each time (even if the initializer is unseeded). Please update your code to provide a seed to the initializer, or avoid using the same initializer instance more than once.
+  warnings.warn(
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-07-26 04:25:58,364] Trial 27 finished with value: 0.8311854600906372 and parameters: {'n_heads': 5, 'units': 53, 'dropout_rate': 0.13976305944181325, 'learning_rate': 0.0044779741740861145, 'batch_size': 16}. Best is trial 10 with value: 0.8658808469772339.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/keras/src/initializers/initializers.py:120: UserWarning: The initializer GlorotUniform is unseeded and being called multiple times, which will return identical values each time (even if the initializer is unseeded). Please update your code to provide a seed to the initializer, or avoid using the same initializer instance more than once.
+  warnings.warn(
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-07-26 04:54:26,779] Trial 28 finished with value: 0.8538106083869934 and parameters: {'n_heads': 7, 'units': 61, 'dropout_rate': 0.17363657537719282, 'learning_rate': 0.00014420575567877255, 'batch_size': 29}. Best is trial 10 with value: 0.8658808469772339.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/keras/src/initializers/initializers.py:120: UserWarning: The initializer GlorotUniform is unseeded and being called multiple times, which will return identical values each time (even if the initializer is unseeded). Please update your code to provide a seed to the initializer, or avoid using the same initializer instance more than once.
+  warnings.warn(
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-07-26 05:06:25,897] Trial 29 finished with value: 0.7595207095146179 and parameters: {'n_heads': 7, 'units': 57, 'dropout_rate': 0.43411825348678834, 'learning_rate': 0.00019896639776794333, 'batch_size': 64}. Best is trial 10 with value: 0.8658808469772339.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/keras/src/initializers/initializers.py:120: UserWarning: The initializer GlorotUniform is unseeded and being called multiple times, which will return identical values each time (even if the initializer is unseeded). Please update your code to provide a seed to the initializer, or avoid using the same initializer instance more than once.
+  warnings.warn(
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-07-26 05:27:14,728] Trial 30 finished with value: 0.8586850762367249 and parameters: {'n_heads': 6, 'units': 45, 'dropout_rate': 0.12751246297364868, 'learning_rate': 0.0004929529681464908, 'batch_size': 24}. Best is trial 10 with value: 0.8658808469772339.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/keras/src/initializers/initializers.py:120: UserWarning: The initializer GlorotUniform is unseeded and being called multiple times, which will return identical values each time (even if the initializer is unseeded). Please update your code to provide a seed to the initializer, or avoid using the same initializer instance more than once.
+  warnings.warn(
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-07-26 05:53:10,769] Trial 31 finished with value: 0.8603391051292419 and parameters: {'n_heads': 5, 'units': 56, 'dropout_rate': 0.14993910550931128, 'learning_rate': 0.00017971440111938747, 'batch_size': 19}. Best is trial 10 with value: 0.8658808469772339.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/keras/src/initializers/initializers.py:120: UserWarning: The initializer GlorotUniform is unseeded and being called multiple times, which will return identical values each time (even if the initializer is unseeded). Please update your code to provide a seed to the initializer, or avoid using the same initializer instance more than once.
+  warnings.warn(
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-07-26 06:11:40,345] Trial 32 finished with value: 0.8230457901954651 and parameters: {'n_heads': 4, 'units': 52, 'dropout_rate': 0.20310296537794958, 'learning_rate': 0.00013830763600845055, 'batch_size': 20}. Best is trial 10 with value: 0.8658808469772339.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/keras/src/initializers/initializers.py:120: UserWarning: The initializer GlorotUniform is unseeded and being called multiple times, which will return identical values each time (even if the initializer is unseeded). Please update your code to provide a seed to the initializer, or avoid using the same initializer instance more than once.
+  warnings.warn(
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-07-26 06:34:11,886] Trial 33 finished with value: 0.86225426197052 and parameters: {'n_heads': 5, 'units': 57, 'dropout_rate': 0.12996110589904109, 'learning_rate': 0.0003009748526485739, 'batch_size': 23}. Best is trial 10 with value: 0.8658808469772339.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/keras/src/initializers/initializers.py:120: UserWarning: The initializer GlorotUniform is unseeded and being called multiple times, which will return identical values each time (even if the initializer is unseeded). Please update your code to provide a seed to the initializer, or avoid using the same initializer instance more than once.
+  warnings.warn(
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-07-26 07:11:54,672] Trial 34 finished with value: 0.8593481779098511 and parameters: {'n_heads': 6, 'units': 62, 'dropout_rate': 0.1611961753284521, 'learning_rate': 0.00020206202496693537, 'batch_size': 18}. Best is trial 10 with value: 0.8658808469772339.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/keras/src/initializers/initializers.py:120: UserWarning: The initializer GlorotUniform is unseeded and being called multiple times, which will return identical values each time (even if the initializer is unseeded). Please update your code to provide a seed to the initializer, or avoid using the same initializer instance more than once.
+  warnings.warn(
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-07-26 07:25:52,772] Trial 35 finished with value: 0.8393087983131409 and parameters: {'n_heads': 5, 'units': 39, 'dropout_rate': 0.2300785840728793, 'learning_rate': 0.000135760946209845, 'batch_size': 27}. Best is trial 10 with value: 0.8658808469772339.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/keras/src/initializers/initializers.py:120: UserWarning: The initializer GlorotUniform is unseeded and being called multiple times, which will return identical values each time (even if the initializer is unseeded). Please update your code to provide a seed to the initializer, or avoid using the same initializer instance more than once.
+  warnings.warn(
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-07-26 07:36:50,159] Trial 36 finished with value: 0.8516795039176941 and parameters: {'n_heads': 4, 'units': 51, 'dropout_rate': 0.12849134542386395, 'learning_rate': 0.00019340989466026077, 'batch_size': 34}. Best is trial 10 with value: 0.8658808469772339.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/keras/src/initializers/initializers.py:120: UserWarning: The initializer GlorotUniform is unseeded and being called multiple times, which will return identical values each time (even if the initializer is unseeded). Please update your code to provide a seed to the initializer, or avoid using the same initializer instance more than once.
+  warnings.warn(
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-07-26 08:29:52,539] Trial 37 finished with value: 0.8562668561935425 and parameters: {'n_heads': 10, 'units': 47, 'dropout_rate': 0.3854052389517868, 'learning_rate': 0.0003559353594630683, 'batch_size': 18}. Best is trial 10 with value: 0.8658808469772339.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/keras/src/initializers/initializers.py:120: UserWarning: The initializer GlorotUniform is unseeded and being called multiple times, which will return identical values each time (even if the initializer is unseeded). Please update your code to provide a seed to the initializer, or avoid using the same initializer instance more than once.
+  warnings.warn(
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-07-26 08:47:51,327] Trial 38 finished with value: 0.855048656463623 and parameters: {'n_heads': 7, 'units': 57, 'dropout_rate': 0.10004808033927828, 'learning_rate': 0.0014401168136801046, 'batch_size': 43}. Best is trial 10 with value: 0.8658808469772339.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/keras/src/initializers/initializers.py:120: UserWarning: The initializer GlorotUniform is unseeded and being called multiple times, which will return identical values each time (even if the initializer is unseeded). Please update your code to provide a seed to the initializer, or avoid using the same initializer instance more than once.
+  warnings.warn(
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-07-26 08:53:46,427] Trial 39 finished with value: 0.8172909617424011 and parameters: {'n_heads': 5, 'units': 29, 'dropout_rate': 0.25104414851356227, 'learning_rate': 0.0008812073499032892, 'batch_size': 53}. Best is trial 10 with value: 0.8658808469772339.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/keras/src/initializers/initializers.py:120: UserWarning: The initializer GlorotUniform is unseeded and being called multiple times, which will return identical values each time (even if the initializer is unseeded). Please update your code to provide a seed to the initializer, or avoid using the same initializer instance more than once.
+  warnings.warn(
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)

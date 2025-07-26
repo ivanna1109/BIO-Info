@@ -1,0 +1,30 @@
+Model: "gat_model"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ gat_conv (GATConv)          multiple                  2520      
+                                                                 
+ gat_conv_1 (GATConv)        multiple                  28728     
+                                                                 
+ batch_normalization (Batch  multiple                  672       
+ Normalization)                                                  
+                                                                 
+ batch_normalization_1 (Bat  multiple                  672       
+ chNormalization)                                                
+                                                                 
+ dropout (Dropout)           multiple                  0         
+                                                                 
+ global_sum_pool (GlobalSum  multiple                  0         
+ Pool)                                                           
+                                                                 
+ dense (Dense)               multiple                  7098      
+                                                                 
+ dense_1 (Dense)             multiple                  903       
+                                                                 
+ dense_2 (Dense)             multiple                  44        
+                                                                 
+=================================================================
+Total params: 40637 (158.74 KB)
+Trainable params: 39965 (156.11 KB)
+Non-trainable params: 672 (2.62 KB)
+_________________________________________________________________

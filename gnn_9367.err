@@ -1,0 +1,214 @@
+2025-07-24 11:15:44.385107: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE4.1 SSE4.2 AVX AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+[11:15:47] 
+
+****
+Pre-condition Violation
+no owner
+Violation occurred on line 146 in file /home/conda/feedstock_root/build_artifacts/rdkit-meta_1732947292231/work/Code/GraphMol/Atom.h
+Failed Expression: dp_mol
+----------
+Stacktrace:
+ 0# Invar::Invariant::toString[abi:cxx11]() const in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/../../../libRDKitRDGeneral.so.1
+ 1# Invar::operator<<(std::ostream&, Invar::Invariant const&) in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/../../../libRDKitRDGeneral.so.1
+ 2# RDKit::Atom::getDegree() const in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/../../../../libRDKitGraphMol.so.1
+ 3# 0x00007F76942E079A in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/rdchem.so
+ 4# boost::python::objects::function::call(_object*, _object*) const in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/../../../libboost_python311.so.1.86.0
+ 5# 0x00007F76946C4449 in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/../../../libboost_python311.so.1.86.0
+ 6# boost::python::detail::exception_handler::operator()(boost::function_n<void> const&) const in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/../../../libboost_python311.so.1.86.0
+ 7# 0x00007F7693A9ECC4 in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/rdmolfiles.so
+ 8# 0x00007F7693A9ED14 in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/rdmolfiles.so
+ 9# 0x00007F7693BB4A24 in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/rdCIPLabeler.so
+10# 0x00007F7694329DC4 in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/rdchem.so
+11# 0x00007F76942BB56D in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/rdchem.so
+12# 0x00007F76942BB08D in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/rdchem.so
+13# 0x00007F76942BABAD in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/rdchem.so
+14# 0x00007F76942BA6CD in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/rdchem.so
+15# 0x00007F76942BA1ED in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/rdchem.so
+16# 0x00007F769478FA94 in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/rdBase.so
+17# 0x00007F769478FAE4 in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/rdBase.so
+18# 0x00007F769478FB34 in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/rdBase.so
+19# 0x00007F769478FB84 in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/rdBase.so
+20# boost::python::handle_exception_impl(boost::function_n<void>) in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/../../../libboost_python311.so.1.86.0
+21# 0x00007F76946C19B3 in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/../../../libboost_python311.so.1.86.0
+22# _PyObject_MakeTpCall in /home/ivanam/.conda/envs/bio_inf/bin/python
+23# _PyEval_EvalFrameDefault in /home/ivanam/.conda/envs/bio_inf/bin/python
+24# 0x00005613BA65C42D in /home/ivanam/.conda/envs/bio_inf/bin/python
+25# PyEval_EvalCode in /home/ivanam/.conda/envs/bio_inf/bin/python
+26# 0x00005613BA67AA1A in /home/ivanam/.conda/envs/bio_inf/bin/python
+27# 0x00005613BA676593 in /home/ivanam/.conda/envs/bio_inf/bin/python
+28# 0x00005613BA68B930 in /home/ivanam/.conda/envs/bio_inf/bin/python
+29# _PyRun_SimpleFileObject in /home/ivanam/.conda/envs/bio_inf/bin/python
+30# _PyRun_AnyFileObject in /home/ivanam/.conda/envs/bio_inf/bin/python
+31# Py_RunMain in /home/ivanam/.conda/envs/bio_inf/bin/python
+32# Py_BytesMain in /home/ivanam/.conda/envs/bio_inf/bin/python
+33# 0x00007F76D6CEC24A in /lib/x86_64-linux-gnu/libc.so.6
+34# __libc_start_main in /lib/x86_64-linux-gnu/libc.so.6
+35# 0x00005613BA64B91D in /home/ivanam/.conda/envs/bio_inf/bin/python
+----------
+****
+
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+2025-07-24 11:16:35.539582: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE4.1 SSE4.2 AVX AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+[11:16:38] 
+
+****
+Pre-condition Violation
+no owner
+Violation occurred on line 146 in file /home/conda/feedstock_root/build_artifacts/rdkit-meta_1732947292231/work/Code/GraphMol/Atom.h
+Failed Expression: dp_mol
+----------
+Stacktrace:
+ 0# Invar::Invariant::toString[abi:cxx11]() const in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/../../../libRDKitRDGeneral.so.1
+ 1# Invar::operator<<(std::ostream&, Invar::Invariant const&) in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/../../../libRDKitRDGeneral.so.1
+ 2# RDKit::Atom::getDegree() const in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/../../../../libRDKitGraphMol.so.1
+ 3# 0x00007F328564679A in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/rdchem.so
+ 4# boost::python::objects::function::call(_object*, _object*) const in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/../../../libboost_python311.so.1.86.0
+ 5# 0x00007F3285A2A449 in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/../../../libboost_python311.so.1.86.0
+ 6# boost::python::detail::exception_handler::operator()(boost::function_n<void> const&) const in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/../../../libboost_python311.so.1.86.0
+ 7# 0x00007F3284D0DCC4 in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/rdmolfiles.so
+ 8# 0x00007F3284D0DD14 in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/rdmolfiles.so
+ 9# 0x00007F328B6B5A24 in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/rdCIPLabeler.so
+10# 0x00007F328568FDC4 in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/rdchem.so
+11# 0x00007F328562156D in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/rdchem.so
+12# 0x00007F328562108D in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/rdchem.so
+13# 0x00007F3285620BAD in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/rdchem.so
+14# 0x00007F32856206CD in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/rdchem.so
+15# 0x00007F32856201ED in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/rdchem.so
+16# 0x00007F3285AE9A94 in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/rdBase.so
+17# 0x00007F3285AE9AE4 in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/rdBase.so
+18# 0x00007F3285AE9B34 in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/rdBase.so
+19# 0x00007F3285AE9B84 in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/rdBase.so
+20# boost::python::handle_exception_impl(boost::function_n<void>) in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/../../../libboost_python311.so.1.86.0
+21# 0x00007F3285A279B3 in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/../../../libboost_python311.so.1.86.0
+22# _PyObject_MakeTpCall in /home/ivanam/.conda/envs/bio_inf/bin/python
+23# _PyEval_EvalFrameDefault in /home/ivanam/.conda/envs/bio_inf/bin/python
+24# 0x000055B00378742D in /home/ivanam/.conda/envs/bio_inf/bin/python
+25# PyEval_EvalCode in /home/ivanam/.conda/envs/bio_inf/bin/python
+26# 0x000055B0037A5A1A in /home/ivanam/.conda/envs/bio_inf/bin/python
+27# 0x000055B0037A1593 in /home/ivanam/.conda/envs/bio_inf/bin/python
+28# 0x000055B0037B6930 in /home/ivanam/.conda/envs/bio_inf/bin/python
+29# _PyRun_SimpleFileObject in /home/ivanam/.conda/envs/bio_inf/bin/python
+30# _PyRun_AnyFileObject in /home/ivanam/.conda/envs/bio_inf/bin/python
+31# Py_RunMain in /home/ivanam/.conda/envs/bio_inf/bin/python
+32# Py_BytesMain in /home/ivanam/.conda/envs/bio_inf/bin/python
+33# 0x00007F32C805324A in /lib/x86_64-linux-gnu/libc.so.6
+34# __libc_start_main in /lib/x86_64-linux-gnu/libc.so.6
+35# 0x000055B00377691D in /home/ivanam/.conda/envs/bio_inf/bin/python
+----------
+****
+
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+2025-07-24 11:17:07.582625: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE4.1 SSE4.2 AVX AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+[11:17:11] 
+
+****
+Pre-condition Violation
+no owner
+Violation occurred on line 146 in file /home/conda/feedstock_root/build_artifacts/rdkit-meta_1732947292231/work/Code/GraphMol/Atom.h
+Failed Expression: dp_mol
+----------
+Stacktrace:
+ 0# Invar::Invariant::toString[abi:cxx11]() const in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/../../../libRDKitRDGeneral.so.1
+ 1# Invar::operator<<(std::ostream&, Invar::Invariant const&) in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/../../../libRDKitRDGeneral.so.1
+ 2# RDKit::Atom::getDegree() const in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/../../../../libRDKitGraphMol.so.1
+ 3# 0x00007F3C4338279A in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/rdchem.so
+ 4# boost::python::objects::function::call(_object*, _object*) const in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/../../../libboost_python311.so.1.86.0
+ 5# 0x00007F3C43766449 in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/../../../libboost_python311.so.1.86.0
+ 6# boost::python::detail::exception_handler::operator()(boost::function_n<void> const&) const in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/../../../libboost_python311.so.1.86.0
+ 7# 0x00007F3C42B4FCC4 in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/rdmolfiles.so
+ 8# 0x00007F3C42B4FD14 in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/rdmolfiles.so
+ 9# 0x00007F3C42C65A24 in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/rdCIPLabeler.so
+10# 0x00007F3C433CBDC4 in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/rdchem.so
+11# 0x00007F3C4335D56D in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/rdchem.so
+12# 0x00007F3C4335D08D in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/rdchem.so
+13# 0x00007F3C4335CBAD in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/rdchem.so
+14# 0x00007F3C4335C6CD in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/rdchem.so
+15# 0x00007F3C4335C1ED in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/rdchem.so
+16# 0x00007F3C43825A94 in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/rdBase.so
+17# 0x00007F3C43825AE4 in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/rdBase.so
+18# 0x00007F3C43825B34 in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/rdBase.so
+19# 0x00007F3C43825B84 in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/rdBase.so
+20# boost::python::handle_exception_impl(boost::function_n<void>) in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/../../../libboost_python311.so.1.86.0
+21# 0x00007F3C437639B3 in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/../../../libboost_python311.so.1.86.0
+22# _PyObject_MakeTpCall in /home/ivanam/.conda/envs/bio_inf/bin/python
+23# _PyEval_EvalFrameDefault in /home/ivanam/.conda/envs/bio_inf/bin/python
+24# 0x000056224101642D in /home/ivanam/.conda/envs/bio_inf/bin/python
+25# PyEval_EvalCode in /home/ivanam/.conda/envs/bio_inf/bin/python
+26# 0x0000562241034A1A in /home/ivanam/.conda/envs/bio_inf/bin/python
+27# 0x0000562241030593 in /home/ivanam/.conda/envs/bio_inf/bin/python
+28# 0x0000562241045930 in /home/ivanam/.conda/envs/bio_inf/bin/python
+29# _PyRun_SimpleFileObject in /home/ivanam/.conda/envs/bio_inf/bin/python
+30# _PyRun_AnyFileObject in /home/ivanam/.conda/envs/bio_inf/bin/python
+31# Py_RunMain in /home/ivanam/.conda/envs/bio_inf/bin/python
+32# Py_BytesMain in /home/ivanam/.conda/envs/bio_inf/bin/python
+33# 0x00007F3C85D9C24A in /lib/x86_64-linux-gnu/libc.so.6
+34# __libc_start_main in /lib/x86_64-linux-gnu/libc.so.6
+35# 0x000056224100591D in /home/ivanam/.conda/envs/bio_inf/bin/python
+----------
+****
+
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+2025-07-24 11:17:37.638496: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE4.1 SSE4.2 AVX AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+[11:17:40] 
+
+****
+Pre-condition Violation
+no owner
+Violation occurred on line 146 in file /home/conda/feedstock_root/build_artifacts/rdkit-meta_1732947292231/work/Code/GraphMol/Atom.h
+Failed Expression: dp_mol
+----------
+Stacktrace:
+ 0# Invar::Invariant::toString[abi:cxx11]() const in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/../../../libRDKitRDGeneral.so.1
+ 1# Invar::operator<<(std::ostream&, Invar::Invariant const&) in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/../../../libRDKitRDGeneral.so.1
+ 2# RDKit::Atom::getDegree() const in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/../../../../libRDKitGraphMol.so.1
+ 3# 0x00007F2BCF4CB79A in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/rdchem.so
+ 4# boost::python::objects::function::call(_object*, _object*) const in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/../../../libboost_python311.so.1.86.0
+ 5# 0x00007F2BCF8AF449 in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/../../../libboost_python311.so.1.86.0
+ 6# boost::python::detail::exception_handler::operator()(boost::function_n<void> const&) const in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/../../../libboost_python311.so.1.86.0
+ 7# 0x00007F2BCEB89CC4 in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/rdmolfiles.so
+ 8# 0x00007F2BCEB89D14 in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/rdmolfiles.so
+ 9# 0x00007F2BCEC9FA24 in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/rdCIPLabeler.so
+10# 0x00007F2BCF514DC4 in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/rdchem.so
+11# 0x00007F2BCF4A656D in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/rdchem.so
+12# 0x00007F2BCF4A608D in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/rdchem.so
+13# 0x00007F2BCF4A5BAD in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/rdchem.so
+14# 0x00007F2BCF4A56CD in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/rdchem.so
+15# 0x00007F2BCF4A51ED in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/rdchem.so
+16# 0x00007F2BCF97AA94 in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/rdBase.so
+17# 0x00007F2BCF97AAE4 in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/rdBase.so
+18# 0x00007F2BCF97AB34 in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/rdBase.so
+19# 0x00007F2BCF97AB84 in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/rdBase.so
+20# boost::python::handle_exception_impl(boost::function_n<void>) in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/../../../libboost_python311.so.1.86.0
+21# 0x00007F2BCF8AC9B3 in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/../../../libboost_python311.so.1.86.0
+22# _PyObject_MakeTpCall in /home/ivanam/.conda/envs/bio_inf/bin/python
+23# _PyEval_EvalFrameDefault in /home/ivanam/.conda/envs/bio_inf/bin/python
+24# 0x000055B2324F942D in /home/ivanam/.conda/envs/bio_inf/bin/python
+25# PyEval_EvalCode in /home/ivanam/.conda/envs/bio_inf/bin/python
+26# 0x000055B232517A1A in /home/ivanam/.conda/envs/bio_inf/bin/python
+27# 0x000055B232513593 in /home/ivanam/.conda/envs/bio_inf/bin/python
+28# 0x000055B232528930 in /home/ivanam/.conda/envs/bio_inf/bin/python
+29# _PyRun_SimpleFileObject in /home/ivanam/.conda/envs/bio_inf/bin/python
+30# _PyRun_AnyFileObject in /home/ivanam/.conda/envs/bio_inf/bin/python
+31# Py_RunMain in /home/ivanam/.conda/envs/bio_inf/bin/python
+32# Py_BytesMain in /home/ivanam/.conda/envs/bio_inf/bin/python
+33# 0x00007F2C11ED824A in /lib/x86_64-linux-gnu/libc.so.6
+34# __libc_start_main in /lib/x86_64-linux-gnu/libc.so.6
+35# 0x000055B2324E891D in /home/ivanam/.conda/envs/bio_inf/bin/python
+----------
+****
+
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/keras/src/initializers/initializers.py:120: UserWarning: The initializer GlorotUniform is unseeded and being called multiple times, which will return identical values each time (even if the initializer is unseeded). Please update your code to provide a seed to the initializer, or avoid using the same initializer instance more than once.
+  warnings.warn(
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)

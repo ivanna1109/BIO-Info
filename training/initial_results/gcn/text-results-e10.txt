@@ -1,0 +1,22 @@
+Evalucija modela....
+244/244 [==============================] - 1s 4ms/step - loss: 0.3407 - accuracy: 0.8672 - f1_score: 0.8481 - roc_auc: 0.9100 - average_precision: 0.9343
+Test Loss: 0.3407
+Test Accuracy: 0.8672
+Test F1Score: 0.8481
+Test ROC AUC: 0.9100
+Test Average Precision: 0.9343
+Idemo na classification report....
+5113
+1
+5113
+1
+              precision    recall  f1-score   support
+
+           0       0.84      0.96      0.90      3114
+           1       0.91      0.72      0.81      1999
+
+    accuracy                           0.87      5113
+   macro avg       0.88      0.84      0.85      5113
+weighted avg       0.87      0.87      0.86      5113
+
+Sve uspesno zavrseno.

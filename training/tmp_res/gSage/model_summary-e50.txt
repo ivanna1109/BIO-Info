@@ -1,0 +1,42 @@
+Model: "graph_sage_model"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ graph_sage_conv (GraphSage  multiple                  2475      
+ Conv)                                                           
+                                                                 
+ batch_normalization (Batch  multiple                  396       
+ Normalization)                                                  
+                                                                 
+ dropout (Dropout)           multiple                  0         
+                                                                 
+ graph_sage_conv_1 (GraphSa  multiple                  19701     
+ geConv)                                                         
+                                                                 
+ batch_normalization_1 (Bat  multiple                  396       
+ chNormalization)                                                
+                                                                 
+ graph_sage_conv_2 (GraphSa  multiple                  19701     
+ geConv)                                                         
+                                                                 
+ batch_normalization_2 (Bat  multiple                  396       
+ chNormalization)                                                
+                                                                 
+ global_avg_pool (GlobalAvg  multiple                  0         
+ Pool)                                                           
+                                                                 
+ flatten (Flatten)           multiple                  0         
+                                                                 
+ dropout_1 (Dropout)         multiple                  0         
+                                                                 
+ dense (Dense)               multiple                  9300      
+                                                                 
+ dense_1 (Dense)             multiple                  22654     
+                                                                 
+ dense_2 (Dense)             multiple                  484       
+                                                                 
+=================================================================
+Total params: 75503 (294.93 KB)
+Trainable params: 74909 (292.61 KB)
+Non-trainable params: 594 (2.32 KB)
+_________________________________________________________________
